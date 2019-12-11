@@ -1,7 +1,8 @@
-import React from 'react';
-import {useRouteData} from 'react-static';
-import {Link} from '@reach/router';
-import {Post} from 'types';
+import React from 'react'
+import {useRouteData} from 'react-static'
+import {Link} from '@reach/router'
+// eslint-disable-next-line
+import {Post} from 'types'
 
 interface Props{}
 
@@ -11,7 +12,7 @@ const component: React.FC<Props> = () => {
   return (
 
     <div>
-      <h1>It's blog time.</h1>
+      <h1>It&apos;s blog time.</h1>
       <br />
       All Posts:
       <ul>
@@ -25,4 +26,4 @@ const component: React.FC<Props> = () => {
   );
 };
 
-export default component;
+export default component

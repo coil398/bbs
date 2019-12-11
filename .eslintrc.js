@@ -4,6 +4,7 @@ module.exports = {
     'es6': true,
   },
   'extends': [
+    'prettier',
     'plugin:react/recommended',
     'google',
   ],
@@ -24,5 +25,6 @@ module.exports = {
     '@typescript-eslint',
   ],
   'rules': {
+    "semi": "off"
   },
 };

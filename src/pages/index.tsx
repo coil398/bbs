@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 
 interface Props {
 
@@ -23,4 +23,4 @@ const component: React.FC<Props> = () => {
   );
 };
 
-export default component;
+export default component
