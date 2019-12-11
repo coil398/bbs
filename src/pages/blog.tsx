@@ -3,10 +3,14 @@ import { useRouteData } from 'react-static'
 import { Link } from '@reach/router'
 import { Post } from 'types'
 
-export default () => {
+interface Props{}
+
+const component: React.FC<Props> = () => {
+
   const { posts }: { posts: Post[] } = useRouteData()
 
   return (
+
     <div>
       <h1>It's blog time.</h1>
       <br />
@@ -21,3 +25,5 @@ export default () => {
     </div>
   )
 }
+
+export default component
