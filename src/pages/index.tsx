@@ -1,13 +1,12 @@
-import React from 'react'
+import React from 'react';
 
 interface Props {
 
 }
 
 const component: React.FC<Props> = () => {
-
   return (
-    <div style={{ textAlign: 'center' }}>
+    <div style={{textAlign: 'center'}}>
       <h1>
         Welcome to React-Static <br /> + TypeScript
       </h1>
@@ -21,7 +20,7 @@ const component: React.FC<Props> = () => {
         <a href="https://twitter.com/swyx">Report issues with this template</a>
       </p>
     </div>
-  )
-}
+  );
+};
 
-export default component
+export default component;
