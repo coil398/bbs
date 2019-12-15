@@ -2,7 +2,7 @@ import React from 'react'
 import { Root, Routes, addPrefetchExcludes } from 'react-static'
 import { Link, Router } from '@reach/router'
 import FancyDiv from 'components/FancyDiv'
-import Dynamic from 'containers/Dynamic'
+import BBS from 'components/BBS'
 import './app.css'
 
 // Any routes that start with 'dynamic' will be treated as non-static routes
@@ -13,15 +13,13 @@ function App() {
     <Root>
       <nav>
         <Link to="/">Home</Link>
-        <Link to="/about">About</Link>
-        <Link to="/blog">Blog</Link>
-        <Link to="/dynamic">Dynamic</Link>
+        <Link to="/bbs">Dynamic</Link>
       </nav>
       <div className="content">
         <FancyDiv>
           <React.Suspense fallback={<em>Loading...</em>}>
             <Router>
-              <Dynamic path="dynamic" />
+              <BBS path="bbs/*" />
               <Routes path="*" />
             </Router>
           </React.Suspense>
