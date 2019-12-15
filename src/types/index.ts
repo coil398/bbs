@@ -1,7 +1,3 @@
-export interface Threads {
-  threads: Thread[]
-}
-
 export interface Thread {
   id: string
   title: string
