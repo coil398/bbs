@@ -25,6 +25,11 @@ module.exports = {
     '@typescript-eslint',
   ],
   'rules': {
-    "semi": "off"
+    "max-len": {
+      "code": 100,
+      "tabWidth": 2
+    },
+    "semi": "off",
+    "require-jsdoc": "off"
   },
 };
