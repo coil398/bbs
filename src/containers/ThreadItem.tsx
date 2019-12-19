@@ -20,10 +20,15 @@ const component: React.FC<Props> = (props: Props) => {
       dispatch(getResponsesAction(res.data, props.index))
     }
     f()
-  }, [props.updatedAt])
+  }, [props.updated_at])
 
   return (
-    <span>thread</span>
+    <div>
+      <p>{props.index}</p>
+      <p>{props.title}</p>
+      <p>{props.responses?.length}</p>
+      <p>{props.updated_at}</p>
+    </div>
   );
 };
 

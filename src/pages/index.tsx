@@ -1,5 +1,5 @@
 import React from 'react'
-import BBS from 'containers/BBS'
+import ThreadList from 'containers/ThreadList'
 
 interface Props {
 
@@ -8,7 +8,7 @@ interface Props {
 const component: React.FC<Props> = () => {
   return (
     <div style={{textAlign: 'center'}}>
-      <BBS />
+      <ThreadList />
     </div>
   );
 };

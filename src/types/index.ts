@@ -1,8 +1,8 @@
 export interface Thread {
   id: string
   title: string
-  createdAt: number
-  updatedAt: number
+  created_at: number
+  updated_at: number
   responses: Response[]
 }
 

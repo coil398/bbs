@@ -6,7 +6,7 @@ const initialState: Thread[] = []
 export const threadsReducer = (state = initialState, action:ThreadActionTypes): Thread[] => {
     switch (action.type) {
         case GET_THREADS:
-            return action.payload
+            return action.payload.threads
         case GET_RESPONSES:
             const thread = state[action.payload.index]
             thread.responses = action.payload.responses

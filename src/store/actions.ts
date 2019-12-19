@@ -4,7 +4,9 @@ export const GET_THREADS = 'GET_THREADS'
 
 interface GetThreadsAction {
     type: typeof GET_THREADS,
-    payload: Thread[]
+    payload: {
+        threads: Thread[]
+    }
 }
 
 export const GET_RESPONSES = 'GET_RESPONSES'
@@ -22,7 +24,9 @@ export type ThreadActionTypes = GetThreadsAction | GetResponsesAction
 export const getThreadsAction = (threads: Thread[]): ThreadActionTypes => {
     return {
         type: GET_THREADS,
-        payload: threads
+        payload: {
+            threads
+        }
     }
 }
 
